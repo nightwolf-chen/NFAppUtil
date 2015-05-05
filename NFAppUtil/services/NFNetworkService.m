@@ -14,7 +14,7 @@ dispatch_queue_t queue;
 dispatch_queue_t get_queue(){
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        queue = dispatch_queue_create("com.example.MyQueue", NULL);
+        queue = dispatch_queue_create("com.nirvawolf.MyQueue", NULL);
     });
     return queue;
 }
